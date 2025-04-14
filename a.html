@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Check - Advanced URL Analyzer</title>
+    <link rel="stylesheet" href="styles1.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🌍 Web Check</h1>
+            <button id="themeToggle">🌙 Toggle Mode</button>
+        </div>
+        <p>Enter a URL to analyze:</p>
+        <input type="text" id="urlInput" placeholder="e.g. https://example.com">
+        <div class="button-group">
+            <button id="analyzeButton">🔍 Analyze</button>
+            <button id="clearButton">❌ Clear</button>
+        </div>
+        <div id="loading" class="hidden">🔍 Analyzing... Please wait.</div>
+    </div>
+
+    <div id="results" class="results-container hidden">
+        <div class="tabs">
+            <button class="tab-button active" data-tab="overview">Overview</button>
+            <button class="tab-button" data-tab="details">Scan Details</button>
+        </div>
+
+        <div id="overview" class="tab-content active"></div>
+        <div id="details" class="tab-content"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
